@@ -1,1 +1,9 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">
+    <div class="pull-left">
+        <h4 class="list-group-item-text">{{recipeItem.name}}</h4>
+        <p class="list-group-item-text">{{recipeItem.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img src={{recipeItem.imagePath}} alt={{recipeItem.name}} class="img-responsive rounded-4" style="max-height: 100px;">
+    </span>
+</a>
