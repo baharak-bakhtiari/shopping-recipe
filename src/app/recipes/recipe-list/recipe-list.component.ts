@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipes.service';
 
@@ -15,9 +15,6 @@ export class RecipeListComponent {
 
   ngOnInit() {
     this.recipes= this.recipeService.getRecipes();
-  }
-
-  recipeJustSelected(){
   }
 
 }
