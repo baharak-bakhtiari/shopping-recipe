@@ -1,25 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Recipe Book</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav d-flex">
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" id="recipes" routerLink="/recipes">Recipes</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" id="shopping-list" routerLink="/shopping-list">app-shopping List</a>
-        </li>
-        <li class="nav-item dropdown justify-self-end">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Manage
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" style="cursor:pointer;">Save Data</a>
-            <a class="dropdown-item" style="cursor:pointer;">Fetch Data</a>
-          </div>
-        </li>
+  <a class="navbar-brand" style="cursor:pointer;">Recipe Book</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
+    <ul class="navbar-nav d-flex">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" id="recipes" routerLink="/recipes">Recipes</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" id="shopping-list" routerLink="/shopping-list">app-shopping List</a>
+      </li>
+    </ul>
+    <div class="btn-group">
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Data<span class="caret"></span></button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" style="cursor:pointer;">Save Data</a></li>
+        <li><a class="dropdown-item" style="cursor:pointer;">Fetch Data</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
