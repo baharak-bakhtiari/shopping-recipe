@@ -14,6 +14,8 @@ import { provideRouter } from '@angular/router';
 import { appRoutes } from './app-routing.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
+import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingEditComponent,
+    NoRecipeComponent,
+    RecipesEditComponent
   ],
   imports: [
     BrowserModule,
