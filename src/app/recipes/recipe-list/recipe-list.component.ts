@@ -9,7 +9,7 @@ import { RecipeService } from '../recipes.service';
 })
 export class RecipeListComponent {
 
-  recipes: Recipe[]=[];
+  recipes!: Recipe[];
 
   constructor(private recipeService: RecipeService){}
 

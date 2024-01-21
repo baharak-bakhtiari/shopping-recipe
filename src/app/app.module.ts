@@ -13,6 +13,7 @@ import { provideRouter } from '@angular/router';
 
 import { appRoutes } from './app-routing.module';
 import { AppRoutingModule } from './app-routing.module';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [provideRouter(appRoutes)],
+  providers: [provideRouter(appRoutes), ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
