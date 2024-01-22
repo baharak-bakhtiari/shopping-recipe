@@ -8,10 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadedFeature='recipe';
-
-  onNavigate(featureName:string){
-    this.loadedFeature=featureName;
-  }
 }
 

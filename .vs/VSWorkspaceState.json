@@ -3,12 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
-    "\\src\\app\\recipes\\recipe-list",
-    "\\src\\app\\recipes\\recipe-list\\recipe-item",
-    "\\src\\app\\shopping-list",
-    "\\src\\app\\shopping-list\\shopping-edit"
+    "\\src\\app\\recipes",
+    "\\src\\app\\recipes\\recipe-detail"
   ],
-  "SelectedNode": "\\src\\app\\shopping-list\\shopping-list.component.ts",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
