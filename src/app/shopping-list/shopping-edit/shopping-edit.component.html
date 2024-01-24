@@ -1,23 +1,25 @@
 <div class="row">
-    <div class="col-xs-12">
-        <form>
-            <div class="row">
-                <div class="col-sm-5 form-group">
-                    <label for="name" class="fw-bold">Name</label>
-                    <input type="text" id="name" class="form-control" #nameInput>
-                </div>
-                <div class="col-sm-2 form-group">
-                    <label for="amount" class="fw-bold">Amount</label>
-                    <input type="number" id="amount" class="form-control" #amountInput>
-                </div>
-            </div>
-            <div class="row my-2">
-                <div class="col-xs-12">
-                    <button class="btn btn-success m-1" type="submit" (click)="onAddIngredient()">Add</button>
-                    <button class="btn btn-danger m-1" type="button">Delete</button>
-                    <button class="btn btn-primary m-1" type="button">Clear</button>
-                </div>
-            </div>
-        </form>
-    </div>
+  <div class="col-xs-12">
+    <form (ngSubmit)="onAddIngredient(addForm)" #addForm="ngForm">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name" class="fw-bold">Name</label>
+          <input type="text" id="name" class="form-control" ngModel name="name" #name="ngModel" required>
+          <span class="help-block" *ngIf="!name.valid && name.touched">Name is required!</span>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount" class="fw-bold">Amount</label>
+          <input type="number" id="amount" class="form-control" ngModel name="amount" #amount="ngModel" required pattern="^[1-9]+[0-9]*$">
+          <span class="help-block" *ngIf="!amount.valid && amount.touched">Amount is required!</span>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-xs-12">
+          <button class="btn btn-success m-1" type="submit" [disabled]="!addForm.valid">{{editMode ? 'Edit' : 'Add'}}</button>
+          <button class="btn btn-danger m-1" type="button">Delete</button>
+          <button class="btn btn-primary m-1" type="button">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
