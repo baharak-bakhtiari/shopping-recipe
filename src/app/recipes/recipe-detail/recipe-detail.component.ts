@@ -12,7 +12,10 @@ export class RecipeDetailComponent implements OnInit {
 
   recipe!: Recipe;
   id!: number;
-  constructor(private recipeService: RecipeService, private router: Router, private route: ActivatedRoute) { }
+
+  constructor(private recipeService: RecipeService,
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params
