@@ -35,6 +35,7 @@ export class RecipeService {
   }
 
   getRecipe(index: number) {
+    console.log(this.recipes[index].ingredients);
     return this.recipes[index];
   }
 
