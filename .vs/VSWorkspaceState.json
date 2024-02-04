@@ -4,9 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\recipes",
-    "\\src\\app\\recipes\\recipes-edit",
-    "\\src\\app\\shopping-list"
+    "\\src\\app\\recipes\\recipe-detail",
+    "\\src\\app\\recipes\\recipe-list",
+    "\\src\\app\\recipes\\recipes-edit"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\recipes\\recipe-detail\\recipe-detail.component.ts",
   "PreviewInSolutionExplorer": false
 }
