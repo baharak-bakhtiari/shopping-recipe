@@ -9,24 +9,26 @@ export class RecipeService {
 
   recipesChanged = new Subject<Recipe[]>();
 
-  recipes: Recipe[] = [
-    new Recipe(
-      'Salad',
-      'This salad is healthy',
-      '../../assets/images/salad.jpg',
-      [
-        new Ingredient('Meat', 2),
-        new Ingredient('Vegetables', 5),
-      ]),
-    new Recipe(
-      "Pasta",
-      "delicious Italian food",
-      '../../assets/images/pasta.jpg',
-      [
-        new Ingredient('Lettuce', 4),
-        new Ingredient('Tomatos', 3),
-      ])
-  ];
+  //recipes: Recipe[] = [
+  //  new Recipe(
+  //    'Salad',
+  //    'This salad is healthy',
+  //    '../../assets/images/salad.jpg',
+  //    [
+  //      new Ingredient('Meat', 2),
+  //      new Ingredient('Vegetables', 5),
+  //    ]),
+  //  new Recipe(
+  //    "Pasta",
+  //    "delicious Italian food",
+  //    '../../assets/images/pasta.jpg',
+  //    [
+  //      new Ingredient('Lettuce', 4),
+  //      new Ingredient('Tomatos', 3),
+  //    ])
+  //];
+
+  recipes: Recipe[] = [];
 
   constructor(private slService: ShoppingListService) { }
 
