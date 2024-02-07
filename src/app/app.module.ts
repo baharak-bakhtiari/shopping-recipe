@@ -18,6 +18,7 @@ import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
 import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
 import { RecipeService } from './recipes/recipes.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     RecipeItemComponent,
     ShoppingEditComponent,
     NoRecipeComponent,
-    RecipesEditComponent
+    RecipesEditComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
