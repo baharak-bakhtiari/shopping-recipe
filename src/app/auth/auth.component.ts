@@ -7,10 +7,15 @@ import { Form, FormGroup } from "@angular/forms";
 })
 export class AuthComponent {
 
+  isLogin = true;
   authForm!: FormGroup;
 
   constructor() {
 
+  }
+
+  onSwitchMode() {
+    this.isLogin = !this.isLogin;
   }
 
   onSubmit(form: Form) {

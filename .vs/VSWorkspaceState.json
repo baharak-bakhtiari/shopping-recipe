@@ -3,12 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
+    "\\src\\app\\auth",
     "\\src\\app\\recipes",
-    "\\src\\app\\recipes\\recipe-list",
-    "\\src\\app\\recipes\\recipes-edit",
-    "\\src\\app\\shared"
+    "\\src\\app\\recipes\\recipes-edit"
   ],
-  "SelectedNode": "\\src\\app\\recipes\\recipes-resolver.ts",
+  "SelectedNode": "\\src\\app\\auth\\auth.component.ts",
   "PreviewInSolutionExplorer": false
 }
