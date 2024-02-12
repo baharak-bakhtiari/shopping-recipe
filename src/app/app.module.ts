@@ -19,6 +19,7 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
 import { RecipeService } from './recipes/recipes.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './auth/auth.component';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AuthComponent } from './auth/auth.component';
     ShoppingEditComponent,
     NoRecipeComponent,
     RecipesEditComponent,
-    AuthComponent
+    AuthComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,

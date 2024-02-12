@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { Form, FormGroup } from "@angular/forms";
+import { FormGroup, NgForm } from "@angular/forms";
+import { AuthService } from "./auth.service";
 
 @Component({
   selector: 'app-auth',
@@ -8,9 +9,11 @@ import { Form, FormGroup } from "@angular/forms";
 export class AuthComponent {
 
   isLogin = true;
+  isLoading = false;
+  error = null;
   authForm!: FormGroup;
 
-  constructor() {
+  constructor(private authService: AuthService) {
 
   }
 
@@ -18,7 +21,25 @@ export class AuthComponent {
     this.isLogin = !this.isLogin;
   }
 
-  onSubmit(form: Form) {
+  onSubmit(form: NgForm) {
+    this.isLoading = true;
+    if (!form.valid) return;
+    const email = form.value.email;
+    const password = form.value.password;
+    if (this.isLogin) {
 
+    } else {
+      this.authService.signup(email, password).subscribe(
+        resData => {
+          console.log(resData);
+          this.isLoading = false;
+        }, errorRes => {
+          console.log(errorRes);
+          this.error = errorRes;
+          this.isLoading = false;
+        }
+      );
+    }
+    form.reset();
   }
 }
