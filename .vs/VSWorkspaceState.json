@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\auth",
-    "\\src\\app\\recipes",
-    "\\src\\app\\recipes\\recipes-edit"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\auth\\auth.component.ts",
+  "SelectedNode": "\\src\\app\\auth",
   "PreviewInSolutionExplorer": false
 }
