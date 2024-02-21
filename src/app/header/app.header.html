@@ -6,18 +6,22 @@
   <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
     <ul class="navbar-nav d-flex">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" id="recipes" routerLink="/recipes">Recipes</a>
+        <a class="nav-link" id="recipes" routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" id="shopping-list" routerLink="/shopping-list">app-shopping List</a>
       </li>
     </ul>
-    <div class="btn-group">
-      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Data<span class="caret"></span></button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" style="cursor:pointer;" (click)="onSaveData()">Save Data</a></li>
-        <li><a class="dropdown-item" style="cursor:pointer;" (click)="onFetchData()">Fetch Data</a></li>
-      </ul>
+    <a class="nav-link" routerLink="/auth" *ngIf="!isAuthenticated" style="cursor:pointer;">Login|Signup</a>
+    <div class="d-flex gap-4 align-items-center" *ngIf="isAuthenticated">
+      <a style="cursor:pointer;">Logout</a>
+      <div class="btn-group">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Data<span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" style="cursor:pointer;" (click)="onSaveData()">Save Data</a></li>
+          <li><a class="dropdown-item" style="cursor:pointer;" (click)="onFetchData()">Fetch Data</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

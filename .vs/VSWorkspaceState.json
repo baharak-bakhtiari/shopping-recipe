@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\auth"
   ],
-  "SelectedNode": "\\src\\app\\auth",
   "PreviewInSolutionExplorer": false
 }
