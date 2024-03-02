@@ -3,7 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\auth"
+    "\\src\\app\\auth",
+    "\\src\\app\\header",
+    "\\src\\app\\shared"
   ],
+  "SelectedNode": "\\src\\app\\auth\\user.model.ts",
   "PreviewInSolutionExplorer": false
 }

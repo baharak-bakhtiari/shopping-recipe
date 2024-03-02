@@ -12,7 +12,7 @@ export class AuthComponent {
 
   isLogin = true;
   isLoading = false;
-  error = null;
+  error: string = null;
   authForm!: FormGroup;
 
   constructor(private authService: AuthService, private router: Router) {
@@ -42,7 +42,6 @@ export class AuthComponent {
         this.isLoading = false;
         this.router.navigate(['/recipes']);
       }, errorRes => {
-        console.log(errorRes);
         this.error = errorRes;
         this.isLoading = false;
       }
