@@ -9,22 +9,22 @@ import { RecipesComponent } from "./recipes/recipes.component";
 import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
 
 export const appRoutes: Routes = [
-  { path: "", redirectTo: "/auth", pathMatch: "full" },
+  { path: "", redirectTo: "/recipes", pathMatch: "full" },
   {
-    path: "recipes", component: RecipesComponent, children: [
+    path: "recipes", component: RecipesComponent,
+    children: [
       { path: "", component: NoRecipeComponent },
       { path: "new", component: RecipesEditComponent },
       { path: ":id", component: RecipeDetailComponent, resolve: [RecipesResolver] },
       { path: ":id/edit", component: RecipesEditComponent, resolve: [RecipesResolver] },
     ]
   },
+  { path: "shopping-list", component: ShoppingListComponent },
   { path: "auth", component: AuthComponent },
-  { path: "shopping-list", component: ShoppingListComponent }
 ]
 
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
