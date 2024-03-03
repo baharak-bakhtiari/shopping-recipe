@@ -7,6 +7,6 @@
     "\\src\\app\\header",
     "\\src\\app\\shared"
   ],
-  "SelectedNode": "\\src\\app\\auth\\user.model.ts",
+  "SelectedNode": "\\src\\app\\auth\\auth-interceptor.service.ts",
   "PreviewInSolutionExplorer": false
 }
