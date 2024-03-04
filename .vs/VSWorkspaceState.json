@@ -5,8 +5,9 @@
     "\\src\\app",
     "\\src\\app\\auth",
     "\\src\\app\\header",
+    "\\src\\app\\recipes\\recipes-edit",
     "\\src\\app\\shared"
   ],
-  "SelectedNode": "\\src\\app\\auth\\user.model.ts",
+  "SelectedNode": "\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }

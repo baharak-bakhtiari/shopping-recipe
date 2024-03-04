@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AuthComponent } from "./auth/auth.component";
+import { AuthGuard } from "./auth/auth.guard";
 import { NoRecipeComponent } from "./recipes/no-recipe/no-recipe.component";
 import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.component";
 import { RecipesEditComponent } from "./recipes/recipes-edit/recipes-edit.component";
@@ -12,6 +13,7 @@ export const appRoutes: Routes = [
   { path: "", redirectTo: "/recipes", pathMatch: "full" },
   {
     path: "recipes", component: RecipesComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: "", component: NoRecipeComponent },
       { path: "new", component: RecipesEditComponent },
@@ -27,4 +29,4 @@ export const appRoutes: Routes = [
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
