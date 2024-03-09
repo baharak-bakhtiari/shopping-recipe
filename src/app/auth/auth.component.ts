@@ -22,6 +22,10 @@ export class AuthComponent {
     this.isLogin = !this.isLogin;
   }
 
+  handleCloseError() {
+    this.error = null;
+  }
+
   onSubmit(form: NgForm) {
 
     if (!form.valid) return;
