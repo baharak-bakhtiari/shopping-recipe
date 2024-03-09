@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { FormGroup, NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
+import { AlertComponent } from "../shared/alert/alert.component";
 import { AuthResponseData, AuthService } from "./auth.service";
 
 @Component({
